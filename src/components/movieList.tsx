@@ -17,7 +17,7 @@ export function MovieList() {
   }, []);
   return (
     <div className="">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center text-center justify-center">
         <h1 className="text-4xl font-semibold">Popular Movies</h1>
         <p className="mt-2 text-xl text-gray-500">
           Find out what's trending in the world of cinema
