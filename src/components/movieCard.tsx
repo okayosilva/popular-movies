@@ -32,7 +32,7 @@ export function MovieCard({
           <h2 className="line-clamp-1 text-xl font-semibold">{title}</h2>
           {/* <p className="text-gray-500">{release_date}</p> */}
           <p className="text-base text-cyan-900">
-            {getGenre()} {vote_average.toFixed(1)}
+            {getGenre()}, {vote_average.toFixed(1)}
           </p>
           <p className="mt-4 line-clamp-3 text-neutral-700">{overview}</p>
         </div>
