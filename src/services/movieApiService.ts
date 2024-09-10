@@ -1,7 +1,7 @@
 import axios from "axios";
+import { apiConnect } from "./api";
 
-const apiKey = "";
-const baseUrl = "https://api.themoviedb.org/3";
+const { baseUrl, apiKey } = apiConnect;
 
 export const getPopularMovies = async () => {
   try {
@@ -10,6 +10,6 @@ export const getPopularMovies = async () => {
     );
     return response.data.results;
   } catch (error) {
-    console.error("Error fetching popular movies",error);
+    console.error("Error fetching popular movies", error);
   }
 };
