@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
+  color: #282828;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--gray);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 button {
