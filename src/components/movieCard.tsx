@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Genres } from "../types/genres";
 import { Movie } from "../types/movies";
 
@@ -13,6 +14,9 @@ export function MovieCard({
   vote_average,
 }: Movie) {
   function getGenre() {
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    
     genre_ids;
     let genres = "";
     for (let i = 0; i < Math.min(genre_ids.length, 2); i++) {
